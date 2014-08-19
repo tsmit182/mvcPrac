@@ -31,7 +31,16 @@ var PostView = Backbone.View.extend({
 		'click h1' : 'sayHey'
 	},
 
-	sayHey: function(){
+	initialize: function() {
+		this.render();
+	},
+
+	render: function() {
+		var eleme = "<h1>A greeting!</h1>";
+		this.$el.html(eleme);
+	},
+
+	sayHey: function() {
 		alert('hey!');
 	}
 

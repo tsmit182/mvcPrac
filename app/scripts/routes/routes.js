@@ -14,6 +14,7 @@ var MyRouter = Backbone.Router.extend({
 
 	single: function() {
 		var postview = new PostView();
+		$('.hero-unit').html(postview.el);
 	}
 
 })
