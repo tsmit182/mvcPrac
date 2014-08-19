@@ -2,10 +2,19 @@ console.log('views connected');
 
 var MyView = Backbone.View.extend({
 
-	el: '.hero-unit',
+	className: '.hero-unit',
 
 	events: {
 		'click h1' : 'sayYay'
+	},
+
+	initialize: function () {
+		this.render();
+	},
+
+	render: function () {
+		var elem = "<h1>Hi!</h1>";
+		this.$el.html(elem);
 	},
 
 	sayYay: function(){
@@ -16,7 +25,7 @@ var MyView = Backbone.View.extend({
 
 var PostView = Backbone.View.extend({
 
-	el: '.hero-unit',
+	className: '.hero-unit',
 
 	events: {
 		'click h1' : 'sayHey'

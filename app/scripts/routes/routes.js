@@ -9,6 +9,7 @@ var MyRouter = Backbone.Router.extend({
 
 	home: function() {
 		var myview = new MyView();
+		$('.hero-unit').html(myview.el);
 	},
 
 	single: function() {
