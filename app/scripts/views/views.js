@@ -14,7 +14,19 @@ var MyView = Backbone.View.extend({
 
 });
 
-var myview = new MyView
+var PostView = Backbone.View.extend({
+
+	el: '.hero-unit',
+
+	events: {
+		'click h1' : 'sayHey'
+	},
+
+	sayHey: function(){
+		alert('hey!');
+	}
+
+});
 
 // var ItemView = Backbone.View.extend({
 //   tagName: 'li'
