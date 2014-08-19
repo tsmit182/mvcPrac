@@ -1,1 +1,3 @@
-console.log('The Iron Yard Rocks');
+muhrouter = new DatRouter();
+
+Backbone.history.start();
